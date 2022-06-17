@@ -78,7 +78,17 @@
       line: "ALLOWED_HOSTS = ['{{ipify_public_ip}}', 'localhost','127.0.1.1']"
       state: present
 
-    
+  - name: clone db project
+    git:
+      repo: "https://github.com/it21998/db.git"
+      version: "main"
+      clone: yes
+      force: yes
+      dest: "/home/azureuser/db"
+
+
+      
+    changed_when: true
   - name: userresg
     command: id
     register: user_groups
