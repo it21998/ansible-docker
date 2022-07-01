@@ -51,3 +51,10 @@ ansible-playbook playbooks/docker-install.yml
 ansible-playbook playbooks/django-app-docker.yml
 ansible-playbook playbooks/django2-app-docker.yml
 ```
+
+# Access 
+```bash
+http://20.58.117.204/         #admin
+http://20.58.117.204:100/     #system
+http://20.58.117.204:8025/    #mailhog
+```
